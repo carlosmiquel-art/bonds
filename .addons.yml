@@ -1,0 +1,11 @@
+---
+channel: stable
+addons:
+  cloudflared:
+    repository: homeassistant-apps/app-cloudflared
+    target: cloudflared
+    image: ghcr.io/homeassistant-apps/cloudflared/{arch}
+  newt:
+    repository: homeassistant-apps/app-newt
+    target: newt
+    image: ghcr.io/homeassistant-apps/newt/{arch}

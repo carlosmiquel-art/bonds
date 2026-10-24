@@ -1,0 +1,223 @@
+# Changelog
+
+## 7.0.19 - 2026-10-22
+
+### 🔒 Security
+
+- Fixes trust in compromised eMudhra intermediate CA certificates by updating cloudflared to v2026.10.3 (fix introduced in v2026.10.2). Weak private keys of eight eMudhra intermediates allowed forged certificates for arbitrary domains, enabling interception or modification of TLS traffic. All users of v7.0.18 and earlier are advised to update immediately. See the [Cloudflare advisory](https://blog.cloudflare.com/emudhra-certificate-compromise) for details. (#1106, #1105)
+
+### ⬆️ Dependency updates
+
+- Update yq to 4.53.3-r2 [@elcajon](https://github.com/elcajon) ([#1104](https://github.com/homeassistant-apps/app-cloudflared/pull/1104))
+- ⬆️ Update cloudflared to v2026.10.2 @[renovate[bot]](https://github.com/apps/renovate) ([#1103](https://github.com/homeassistant-apps/app-cloudflared/pull/1103))
+- ⬆️ Update cloudflared to v2026.10.3 @[renovate[bot]](https://github.com/apps/renovate) ([#1105](https://github.com/homeassistant-apps/app-cloudflared/pull/1105))
+
+## 7.0.18 - 2026-10-16
+
+### ⬆️ Dependency updates
+
+- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.7 @[renovate[bot]](https://github.com/apps/renovate) ([#1097](https://github.com/homeassistant-apps/app-cloudflared/pull/1097))
+- ⬆️ Update cloudflared to v2026.10.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1098](https://github.com/homeassistant-apps/app-cloudflared/pull/1098))
+- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.8 @[renovate[bot]](https://github.com/apps/renovate) ([#1099](https://github.com/homeassistant-apps/app-cloudflared/pull/1099))
+- ⬆️ Update cloudflared to v2026.10.1 @[renovate[bot]](https://github.com/apps/renovate) ([#1101](https://github.com/homeassistant-apps/app-cloudflared/pull/1101))
+
+## 7.0.17 - 2026-09-28
+
+### ⬆️ Dependency updates
+
+- ⬆️ Update cloudflared to v2026.9.1 @[renovate[bot]](https://github.com/apps/renovate) ([#1088](https://github.com/homeassistant-apps/app-cloudflared/pull/1088))
+- ⬆️ Update docker/setup-buildx-action action to v4.4.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1090](https://github.com/homeassistant-apps/app-cloudflared/pull/1090))
+- ⬆️ Update docker/build-push-action action to v7.4.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1089](https://github.com/homeassistant-apps/app-cloudflared/pull/1089))
+- ⬆️ Update docker/setup-qemu-action action to v4.4.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1091](https://github.com/homeassistant-apps/app-cloudflared/pull/1091))
+- ⬆️ Update docker/setup-buildx-action action to v4.4.1 @[renovate[bot]](https://github.com/apps/renovate) ([#1092](https://github.com/homeassistant-apps/app-cloudflared/pull/1092))
+- ⬆️ Update cloudflared to v2026.9.3 @[renovate[bot]](https://github.com/apps/renovate) ([#1093](https://github.com/homeassistant-apps/app-cloudflared/pull/1093))
+- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.6 @[renovate[bot]](https://github.com/apps/renovate) ([#1094](https://github.com/homeassistant-apps/app-cloudflared/pull/1094))
+
+## 7.0.16 - 2026-09-11
+
+### ⬆️ Dependency updates
+
+- ⬆️ Update cloudflared to v2026.9.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1086](https://github.com/homeassistant-apps/app-cloudflared/pull/1086))
+- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.5 @[renovate[bot]](https://github.com/apps/renovate) ([#1087](https://github.com/homeassistant-apps/app-cloudflared/pull/1087))
+
+## 7.0.14 - 2026-08-15
+
+### 🐛 Bug fixes
+
+- fix: fix regressions in 7.0.12-13 [@RonaldPhilipsen](https://github.com/RonaldPhilipsen) ([#1063](https://github.com/homeassistant-apps/app-cloudflared/pull/1063))
+
+### ⬆️ Dependency updates
+
+- ⬆️ Update cloudflared to v2026.8.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1064](https://github.com/homeassistant-apps/app-cloudflared/pull/1064))
+- ⬆️ Update cloudflared to v2026.8.1 @[renovate[bot]](https://github.com/apps/renovate) ([#1065](https://github.com/homeassistant-apps/app-cloudflared/pull/1065))
+- ⬆️ Update cloudflared to v2026.8.2 @[renovate[bot]](https://github.com/apps/renovate) ([#1067](https://github.com/homeassistant-apps/app-cloudflared/pull/1067))
+
+## 7.0.13 - 2026-08-08
+
+### 🐛 Bug fixes
+
+- fix: ha_config_file could still overwrite ssl parameter when already set  [@RonaldPhilipsen](https://github.com/RonaldPhilipsen) ([#1057](https://github.com/homeassistant-apps/app-cloudflared/pull/1057))
+
+## 7.0.12 - 2026-08-07
+
+### 🚀 Enhancements
+
+- fix: read configured http port from http config [@RonaldPhilipsen](https://github.com/RonaldPhilipsen) ([#1049](https://github.com/homeassistant-apps/app-cloudflared/pull/1049))
+
+### 📚 Documentation
+
+- Update http settings documentation [@brenner-tobias](https://github.com/brenner-tobias) ([#1054](https://github.com/homeassistant-apps/app-cloudflared/pull/1054))
+
+### ⬆️ Dependency updates
+
+- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v21.0.1 @[renovate[bot]](https://github.com/apps/renovate) ([#1050](https://github.com/homeassistant-apps/app-cloudflared/pull/1050))
+
+## 7.0.11 - 2026-07-29
+
+### 🧰 Maintenance
+
+- Use official release drafter, as a standalone workflow, without delay [@lmagyar](https://github.com/lmagyar) ([#1041](https://github.com/homeassistant-apps/app-cloudflared/pull/1041))
+
+### ⬆️ Dependency updates
+
+- ⬆️ Update cloudflared to v2026.7.3 @[renovate[bot]](https://github.com/apps/renovate) ([#1043](https://github.com/homeassistant-apps/app-cloudflared/pull/1043))
+- ⬆️ Update docker/login-action action to v4.5.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1044](https://github.com/homeassistant-apps/app-cloudflared/pull/1044))
+- ⬆️ Update docker/login-action action to v4.5.1 @[renovate[bot]](https://github.com/apps/renovate) ([#1045](https://github.com/homeassistant-apps/app-cloudflared/pull/1045))
+- ⬆️ Update docker/login-action action to v4.5.2 @[renovate[bot]](https://github.com/apps/renovate) ([#1046](https://github.com/homeassistant-apps/app-cloudflared/pull/1046))
+- ⬆️ Update docker/login-action action to v4.6.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1047](https://github.com/homeassistant-apps/app-cloudflared/pull/1047))
+
+## 7.0.10 - 2026-07-16
+
+### 🧰 Maintenance
+
+- Refresh devcontainer [@felipecrs](https://github.com/felipecrs) ([#1031](https://github.com/homeassistant-apps/app-cloudflared/pull/1031))
+
+### ⬆️ Dependency updates
+
+- ⬆️ Update docker/build-push-action action to v7.3.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1032](https://github.com/homeassistant-apps/app-cloudflared/pull/1032))
+- ⬆️ Update docker/login-action action to v4.4.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1033](https://github.com/homeassistant-apps/app-cloudflared/pull/1033))
+- ⬆️ Update docker/setup-qemu-action action to v4.2.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1036](https://github.com/homeassistant-apps/app-cloudflared/pull/1036))
+- ⬆️ Update docker/setup-buildx-action action to v4.2.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1035](https://github.com/homeassistant-apps/app-cloudflared/pull/1035))
+- ⬆️ Update ghcr.io/home-assistant/devcontainer Docker tag to v6 @[renovate[bot]](https://github.com/apps/renovate) ([#1037](https://github.com/homeassistant-apps/app-cloudflared/pull/1037))
+- ⬆️ Update cloudflared to v2026.7.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1038](https://github.com/homeassistant-apps/app-cloudflared/pull/1038))
+- ⬆️ Update cloudflared to v2026.7.2 @[renovate[bot]](https://github.com/apps/renovate) ([#1040](https://github.com/homeassistant-apps/app-cloudflared/pull/1040))
+
+## 7.0.9 - 2026-06-24
+
+### ⬆️ Dependency updates
+
+- ⬆️ Update cloudflared to v2026.6.1 @[renovate[bot]](https://github.com/apps/renovate) ([#1027](https://github.com/homeassistant-apps/app-cloudflared/pull/1027))
+- ⬆️ Update actions/checkout action to v7 @[renovate[bot]](https://github.com/apps/renovate) ([#1028](https://github.com/homeassistant-apps/app-cloudflared/pull/1028))
+- ⬆️ Update App (Add-on) base image to v21 @[renovate[bot]](https://github.com/apps/renovate) ([#1029](https://github.com/homeassistant-apps/app-cloudflared/pull/1029))
+
+## 7.0.8 - 2026-06-10
+
+### ⬆️ Dependency updates
+
+- Update YQ version to 4.49.2-r6 in Dockerfile [@sir-Unknown](https://github.com/sir-Unknown) ([#1016](https://github.com/homeassistant-apps/app-cloudflared/pull/1016))
+- ⬆️ Update docker/build-push-action action to v7.2.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1017](https://github.com/homeassistant-apps/app-cloudflared/pull/1017))
+- ⬆️ Update docker/login-action action to v4.2.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1018](https://github.com/homeassistant-apps/app-cloudflared/pull/1018))
+- ⬆️ Update docker/setup-buildx-action action to v4.1.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1020](https://github.com/homeassistant-apps/app-cloudflared/pull/1020))
+- ⬆️ Update cloudflared to v2026.5.1 @[renovate[bot]](https://github.com/apps/renovate) ([#1019](https://github.com/homeassistant-apps/app-cloudflared/pull/1019))
+- ⬆️ Update cloudflared to v2026.5.2 @[renovate[bot]](https://github.com/apps/renovate) ([#1021](https://github.com/homeassistant-apps/app-cloudflared/pull/1021))
+- ⬆️ Update docker/setup-qemu-action action to v4.1.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1022](https://github.com/homeassistant-apps/app-cloudflared/pull/1022))
+- ⬆️ Update cloudflared to v2026.6.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1025](https://github.com/homeassistant-apps/app-cloudflared/pull/1025))
+- ⬆️ Update App (Add-on) base image to v20.2.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1024](https://github.com/homeassistant-apps/app-cloudflared/pull/1024))
+
+## 7.0.7 - 2026-05-15
+
+### ⬆️ Dependency updates
+
+- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v20.1.1 @[renovate[bot]](https://github.com/apps/renovate) ([#1011](https://github.com/homeassistant-apps/app-cloudflared/pull/1011))
+- ⬆️ Update cloudflared to v2026.5.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1013](https://github.com/homeassistant-apps/app-cloudflared/pull/1013))
+
+## 7.0.6 - 2026-04-26
+
+### 📚 Documentation
+
+- Add_updated_screenshots [@brenner-tobias](https://github.com/brenner-tobias) ([#998](https://github.com/homeassistant-apps/app-cloudflared/pull/998))
+
+### ⬆️ Dependency updates
+
+- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v20.0.2 @[renovate[bot]](https://github.com/apps/renovate) ([#1000](https://github.com/homeassistant-apps/app-cloudflared/pull/1000))
+- Update yq to 4.49.2-r5 [@brenner-tobias](https://github.com/brenner-tobias) ([#1004](https://github.com/homeassistant-apps/app-cloudflared/pull/1004))
+- ⬆️ Update docker/login-action action to v4.1.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1005](https://github.com/homeassistant-apps/app-cloudflared/pull/1005))
+- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v20.0.4 @[renovate[bot]](https://github.com/apps/renovate) ([#1002](https://github.com/homeassistant-apps/app-cloudflared/pull/1002))
+- ⬆️ Update docker/build-push-action action to v7.1.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1003](https://github.com/homeassistant-apps/app-cloudflared/pull/1003))
+- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v20.1.0 @[renovate[bot]](https://github.com/apps/renovate) ([#1008](https://github.com/homeassistant-apps/app-cloudflared/pull/1008))
+
+## 7.0.5 - 2026-03-20
+
+### ⬆️ Dependency updates
+
+- ⬆️ Update yq to 4.49.2-r4 [@elcajon](https://github.com/elcajon) ([#995](https://github.com/homeassistant-apps/app-cloudflared/pull/995))
+- ⬆️ Update cloudflared to v2026.3.0 @[renovate[bot]](https://github.com/apps/renovate) ([#994](https://github.com/homeassistant-apps/app-cloudflared/pull/994))
+
+## 7.0.4 - 2026-03-06
+
+### 🧰 Maintenance
+
+- Use homeassistant-apps/.github repo's release-drafter.yml [@lmagyar](https://github.com/lmagyar) ([#989](https://github.com/homeassistant-apps/app-cloudflared/pull/989))
+
+### ⬆️ Dependency updates
+
+- ⬆️ Update docker/build-push-action action to v6.19.0 @[renovate[bot]](https://github.com/apps/renovate) ([#981](https://github.com/homeassistant-apps/app-cloudflared/pull/981))
+- ⬆️ Update docker/build-push-action action to v6.19.1 @[renovate[bot]](https://github.com/apps/renovate) ([#982](https://github.com/homeassistant-apps/app-cloudflared/pull/982))
+- ⬆️ Update docker/build-push-action action to v6.19.2 @[renovate[bot]](https://github.com/apps/renovate) ([#984](https://github.com/homeassistant-apps/app-cloudflared/pull/984))
+- ⬆️ Update docker/login-action action to v4 @[renovate[bot]](https://github.com/apps/renovate) ([#990](https://github.com/homeassistant-apps/app-cloudflared/pull/990))
+- ⬆️ Update docker/setup-qemu-action action to v4 @[renovate[bot]](https://github.com/apps/renovate) ([#991](https://github.com/homeassistant-apps/app-cloudflared/pull/991))
+- ⬆️ Update docker/setup-buildx-action action to v4 @[renovate[bot]](https://github.com/apps/renovate) ([#992](https://github.com/homeassistant-apps/app-cloudflared/pull/992))
+- ⬆️ Update docker/build-push-action action to v7 @[renovate[bot]](https://github.com/apps/renovate) ([#993](https://github.com/homeassistant-apps/app-cloudflared/pull/993))
+
+## 7.0.3 - 2026-02-08
+
+### ⬆️ Dependency updates
+
+- ⬆️ Update yq to 4.49.2-r3 [@elcajon](https://github.com/elcajon) ([#979](https://github.com/homeassistant-apps/app-cloudflared/pull/979))
+- ⬆️ Update cloudflared to v2026.2.0 @[renovate[bot]](https://github.com/apps/renovate) ([#978](https://github.com/homeassistant-apps/app-cloudflared/pull/978))
+
+## 7.0.2 - 2026-01-29
+
+### 🧰 Maintenance
+
+- Modify release drafter template [@lmagyar](https://github.com/lmagyar) ([#956](https://github.com/homeassistant-apps/app-cloudflared/pull/956))
+- Run release drafter as last job in CI [@lmagyar](https://github.com/lmagyar) ([#959](https://github.com/homeassistant-apps/app-cloudflared/pull/959))
+- Add PR's url to the release draft [@lmagyar](https://github.com/lmagyar) ([#963](https://github.com/homeassistant-apps/app-cloudflared/pull/963))
+
+### 📚 Documentation
+
+- Remove legacy architectures, Remove broken badges [@brenner-tobias](https://github.com/brenner-tobias) ([#960](https://github.com/homeassistant-apps/app-cloudflared/pull/960))
+- Add LICENSE.md [@brenner-tobias](https://github.com/brenner-tobias) ([#961](https://github.com/homeassistant-apps/app-cloudflared/pull/961))
+- Update Remote Managed Tunnel Documentation (Wiki) [@elcajon](https://github.com/elcajon) ([#973](https://github.com/homeassistant-apps/app-cloudflared/pull/973))
+
+### ⬆️ Dependency updates
+
+- ⬆️ Update docker/setup-buildx-action action to v3.12.0 @[renovate[bot]](https://github.com/apps/renovate) ([#957](https://github.com/homeassistant-apps/app-cloudflared/pull/957))
+- ⬆️ Update yq to v4.47.2-r3 @[renovate[bot]](https://github.com/apps/renovate) ([#966](https://github.com/homeassistant-apps/app-cloudflared/pull/966))
+- ⬆️ Update cloudflared to v2026 @[renovate[bot]](https://github.com/apps/renovate) ([#968](https://github.com/homeassistant-apps/app-cloudflared/pull/968))
+- ⬆️ Update cloudflared to v2026.1.2 @[renovate[bot]](https://github.com/apps/renovate) ([#972](https://github.com/homeassistant-apps/app-cloudflared/pull/972))
+- ⬆️ Update yq to 4.49.2-r2 [@elcajon](https://github.com/elcajon) ([#975](https://github.com/homeassistant-apps/app-cloudflared/pull/975))
+- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v20 @[renovate[bot]](https://github.com/apps/renovate) ([#974](https://github.com/homeassistant-apps/app-cloudflared/pull/974))
+- ⬆️ Update docker/login-action action to v3.7.0 @[renovate[bot]](https://github.com/apps/renovate) ([#976](https://github.com/homeassistant-apps/app-cloudflared/pull/976))
+- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v20.0.1 @[renovate[bot]](https://github.com/apps/renovate) ([#977](https://github.com/homeassistant-apps/app-cloudflared/pull/977))
+
+## 7.0.1 - 2025-12-08
+
+### What’s changed
+
+### 🧰 Maintenance
+
+- Update Add-on CI [@elcajon](https://github.com/elcajon) (#949)
+- Update CI [@elcajon](https://github.com/elcajon) (#951)
+
+### 📚 Documentation
+
+- Update docs [@elcajon](https://github.com/elcajon) (#954)
+
+### ⬆️ Dependency updates
+
+- ⬆️ Update actions/checkout action to v6 @[renovate[bot]](https://github.com/apps/renovate) (#947)
+
+[//]: # (do not remove these and the surrounding blank lines)
+[//]: # (generated by the repository updater action)
+
